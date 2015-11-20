@@ -29,16 +29,12 @@ public class SucursalController {
 	
 	
 	
-	
-	
-	
-	
-	
 	public ModelAndView model(){
 		ModelAndView model = new ModelAndView("sucursal/list");
-		model.addObject("sucursale",sucursalService.findAll());
+		model.addObject("sucursales",sucursalService.findAll());
 		model.addObject("sucursal",new Sucursal());
 		return model;
 	}
 
 }
+
